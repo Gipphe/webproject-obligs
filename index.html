@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta charset="utf-8">
+		<title>Webproject obligs</title>
+		<meta property="og:url" content="http://student.cs.hioa.no/~s237590/obligs/">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="Webproject obligs">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<main>
+			<h1>Webproject obligs</h1>
+			<div class="joke">
+				<img alt="curved arrow going from the left side of the image to the top of the image" src="img/curved-arrow.png"><div id="joke">Sorry, Anthony. I had to.</div>
+			</div>
+			<div class="search-field">
+				<label for="search-field">Input your student ID</label>
+				<input name="search-field" type="text" id="search-field" placeholder="StudentID">
+				<button id="search-button" onclick="search()">Search!</button>
+			</div>
+			<div id="status"></div>
+			<div>
+				<table class="obligs">
+					<tr class="name">
+						<td>Name:</td>
+						<td colspan="2"><span id="first-name">N/A</span> <span id="last-name">N/A</span></td>
+					</tr>
+					<tr class="points">
+						<td>Points:</td>
+						<td colspan="2"><span id="obligpassed">0</span>/7</td>
+					</tr>
+					<tr><td colspan="3">&nbsp;</td></tr>
+					<tr>
+						<th>Oblig</th>
+						<th>Status</th>
+						<th>Points</th>
+					</tr>
+					<tr class="intro">
+						<td>Introduction Week:</td>
+						<td id="introductionweek"></td>
+						<td>1</td>
+					</tr>
+					<tr class="pact">
+						<td>PACT:</td>
+						<td id="pact"></td>
+						<td>1</td>
+					</tr>
+					<tr class="ffc">
+						<td>Freaky Friday Challenge:</td>
+						<td id="freakyfriday"></td>
+						<td>2</td>
+					</tr>
+					<tr class="sinmi">
+						<td>See It Now Make It:</td>
+						<td id="seeitnowmakeit"></td>
+						<td>1</td>
+					</tr>
+					<tr class="mmoscg">
+						<td>MMOSCG:</td>
+						<td id="mmoscg"></td>
+						<td>2</td>
+					</tr>
+					<tr class="snowball">
+						<td>Snowball Challenge:</td>
+						<td id="snowballchallenge"></td>
+						<td>2</td>
+					</tr>
+					<tr class="accessibility">
+						<td>Accessibility Challenge:</td>
+						<td id="accessibilitychallenge"></td>
+						<td>0</td>
+					</tr>
+					<tr class="innovation">
+						<td>Innovation Challenge:</td>
+						<td id="innovationcamp"></td>
+						<td>3</td>
+					</tr>
+					<tr class="tango">
+						<td>Project Tango:</td>
+						<td id="tango"></td>
+						<td>2</td>
+					</tr>
+				</table>
+			</div>
+			<footer>
+				Loading indicator by Pau Giner at <a href="https://commons.wikimedia.org/wiki/File:Loading_indicator_circle.svg">Wikimedia Commons</a><br>
+				Curved arrow from <a href="http://cliparts.co/curved-arrow-clipart">Cliparts.co</a>
+			</footer>
+		</main>
+		<script src="js/index.js"></script>
+	</body>
+</html>
