@@ -107,6 +107,9 @@
 				val = oblig.val;
 			}
 			el = document.getElementById(oblig.id);
+			if (!el) {
+				return;
+			}
 			getParentTr(el).classList.remove('ok', 'in-progress', 'fail', 'no');
 			el.innerHTML = val;
 			if (oblig.val === 'ok') {
