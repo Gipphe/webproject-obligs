@@ -73,6 +73,11 @@ footer {
 	left: -9999999px;
 	overflow: hidden;
 }
+.code {
+	font-family: monospace;
+/*	background-color: #ddd;
+	color: #222;*/
+}
 #status {
 	background-color: #eee;
 	color: #222;
@@ -82,18 +87,34 @@ footer {
 	margin: 10px auto;
 	border-collapse: collapse;
 }
+.obligs td,
+.obligs th {
+	padding: 0 8px;
+}
 .obligs td:nth-child(1),
 .obligs th:nth-child(1) {
+	border-right: 1px solid #aaa;
 	width: 200px;
 	text-align: right;
 }
 .obligs td:nth-child(2),
 .obligs th:nth-child(2) {
+	text-align: center;
 	width: 150px;
 }
 .obligs td:nth-child(3),
 .obligs th:nth-child(3) {
+	border-left: 1px solid #aaa;
 	text-align: center;
+}
+.obligs thead td:nth-child(2) {
+	text-align: left;
+}
+.obligs tr.headers {
+	border-bottom: 1px solid #aaa;
+}
+.obligs td.blank {
+	border: none;
 }
 .obligs .ok {
 	background-color: #78ab78;
