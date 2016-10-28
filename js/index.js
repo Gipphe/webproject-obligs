@@ -20,8 +20,8 @@
 		'Sorry, Anthony. <span style="color:red">I had to.</span> &#9786;',
 		'Where dreams are utterly demolished. With a smile.',
 		'The class where the teacher\'s clearly more<br> excited than he has any right to be.',
-		'public class Webproject {<br>&nbsp;&nbsp;public Webproject() {<br>&nbsp;&nbsp;&nbsp;&nbsp;Teacher teacher = (Teacher) new Anthony();<br>&nbsp;&nbsp; }<br>}',
-		'const Webproject = function() {<br>&nbsp;&nbsp;this.teacher = new Anthony();<br>}'
+		'<pre class="code">public class Webproject {\n  public Webproject() {\n    Teacher teacher = (Teacher) new Anthony();\n  }\n}</pre>',
+		'<pre class="code">const Webproject = function() {\n  this.teacher = new Anthony();\n}</pre>'
 	];
 	var index = Math.floor(Math.random() * jokes.length);
 	joke.innerHTML = jokes[index];
