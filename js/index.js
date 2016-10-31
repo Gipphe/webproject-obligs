@@ -112,7 +112,9 @@
 			}
 			getParentTr(el).classList.remove('ok', 'in-progress', 'fail', 'no');
 			el.innerHTML = val;
-			if (oblig.val === 'ok') {
+			if (Number(val) >= '7') {
+				getParentTr(el).classList.add('ok');
+			} else if (oblig.val === 'ok') {
 				getParentTr(el).classList.add('ok');
 			} else if (oblig.val === 'in progress') {
 				getParentTr(el).classList.add('in-progress');
